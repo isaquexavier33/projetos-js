@@ -1,0 +1,58 @@
+import { noteDown, noteUp } from "./notes.js";
+import { keys } from "./scripts.js";
+
+const keyDownMapper = {
+  Tab: () => noteDown(keys[0]),
+  1: () => noteDown(keys[1]),
+  q: () => noteDown(keys[2]),
+  2: () => noteDown(keys[3]),
+  w: () => noteDown(keys[4]),
+  e: () => noteDown(keys[5]),
+  3: () => noteDown(keys[6]),
+  r: () => noteDown(keys[7]),
+  4: () => noteDown(keys[8]),
+  t: () => noteDown(keys[9]),
+  5: () => noteDown(keys[10]),
+  y: () => noteDown(keys[11]),
+  u: () => noteDown(keys[12]),
+  6: () => noteDown(keys[13]),
+  i: () => noteDown(keys[14]),
+  7: () => noteDown(keys[15]),
+  o: () => noteDown(keys[16]),
+  p: () => noteDown(keys[17]),
+  8: () => noteDown(keys[18]),
+  "[": () => noteDown(keys[19]),
+  "-": () => noteDown(keys[20]),
+  "]": () => noteDown(keys[21]),
+  Backspace: () => noteDown(keys[22]),
+  "\\": () => noteDown(keys[23]),
+};
+
+const keyUpMapper = {
+  Tab: () => noteUp(keys[0]),
+  1: () => noteUp(keys[1]),
+  q: () => noteUp(keys[2]),
+  2: () => noteUp(keys[3]),
+  w: () => noteUp(keys[4]),
+  e: () => noteUp(keys[5]),
+  3: () => noteUp(keys[6]),
+  r: () => noteUp(keys[7]),
+  4: () => noteUp(keys[8]),
+  t: () => noteUp(keys[9]),
+  5: () => noteUp(keys[10]),
+  y: () => noteUp(keys[11]),
+  u: () => noteUp(keys[12]),
+  6: () => noteUp(keys[13]),
+  i: () => noteUp(keys[14]),
+  7: () => noteUp(keys[15]),
+  o: () => noteUp(keys[16]),
+  p: () => noteUp(keys[17]),
+  8: () => noteUp(keys[18]),
+  "[": () => noteUp(keys[19]),
+  "-": () => noteUp(keys[20]),
+  "]": () => noteUp(keys[21]),
+  Backspace: () => noteUp(keys[22]),
+  "\\": () => noteUp(keys[23]),
+};
+
+export { keyDownMapper, keyUpMapper };

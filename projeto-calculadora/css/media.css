@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    .container {
+        align-items: flex-start;
+    }
+    .calculator {
+        height: 100vh;
+    }
+
+    .calculator form input,
+    #parenteses {
+        height: 50px;
+    }
+
+    form .display {
+        border-radius: 0;
+    }
+
+    form .display input {
+        border-radius: 0;
+        font-size: 25px;
+        height: 35px;
+    }
+}
