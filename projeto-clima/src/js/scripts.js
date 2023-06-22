@@ -1,5 +1,5 @@
 // Variables and element selection
-const apiKey = "d7f72756a32583401131c102e6fbcf83";
+import { apiKey } from "./key.js";
 let currentCountryFlag = "BR";
 let apiCountryURL = `https://flagsapi.com/${currentCountryFlag}/flat/64.png`;
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
