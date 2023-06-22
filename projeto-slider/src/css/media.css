@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 700px) {
+  .slider {
+    width: 100%;
+  }
+
+  .auto-navigation,
+  .manual-navigation {
+    margin-top: 70%;
+  }
+}
