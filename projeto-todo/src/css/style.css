@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+/* Estilos Gerais */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bbb;
+}
+
+button:has(i) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid rgba(0, 0, 0, 0.242);
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover > i {
+  color: black;
+  transform: scale(1.1);
+}
+
+button i {
+  pointer-events: none;
+  transition: transform .4s;
+}
+
+input,
+select {
+  padding: 4px 8px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Cabeçalho da lista */
+
+.container {
+  max-width: 450px;
+  margin: 2rem auto;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.container header {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 0 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulários */
+
+#todo-form, #edit-form {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+#todo-form p,
+#edit-form p {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+#todo-form button,
+#edit-form button,
+#search button {
+  border: none;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: .3rem;
+}
+
+#cancel-edit-btn {
+  padding: .5rem;
+  margin-top: 1rem;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid black !important;
+  transition: .4s;
+}
+
+#cancel-edit-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Barra de Ferramentas */
+
+#toolbar {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+#toolbar h4 {
+  margin-bottom: .5rem;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  width: 65%;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: .3rem;
+}
+
+#filter {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Todo List */
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: .3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: .9rem;
+}
+
+.todo button {
+  margin-left: .4rem;
+}
+
+.done {
+  background-color: #333;
+}
+
+.done h3 {
+  font-style: italic;
+  color: white;
+  text-decoration: line-through;
+}
